@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Study Planner</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #eef5f3; --card: #ffffff; --ink: #12343b; --muted: #5d7a80;
+  --line: #d2e1de; --accent: #0f766e; --accent-ink: #ffffff;
+  --high: #c2410c; --med: #a16207; --low: #0f766e;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1a1c; --card: #152427; --ink: #e4f1ee; --muted: #8fb0ab;
+    --line: #25393c; --accent: #5eead4; --accent-ink: #0e1a1c;
+    --high: #fb923c; --med: #facc15; --low: #5eead4;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1a1c; --card: #152427; --ink: #e4f1ee; --muted: #8fb0ab;
+  --line: #25393c; --accent: #5eead4; --accent-ink: #0e1a1c;
+  --high: #fb923c; --med: #facc15; --low: #5eead4;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.5 Inter, system-
